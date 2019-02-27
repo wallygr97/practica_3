@@ -4,7 +4,7 @@ public class Etiqueta {
     private long id;
     private String etiqueta;
 
-    public Etiqueta(long id, String etiqueta) {
+    public Etiqueta() {
         this.id = id;
         this.etiqueta = etiqueta;
     }

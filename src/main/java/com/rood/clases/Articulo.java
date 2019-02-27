@@ -68,7 +68,7 @@ public class Articulo {
         this.listaEtiquetas = listaEtiquetas;
     }
 
-    public Articulo(long id, String titulo, String cuerpo, Usuario autor, Date fecha, List<Comentario> listaComentarios, List<Etiqueta> listaEtiquetas) {
+    public Articulo() {
         this.id = id;
         this.titulo = titulo;
         this.cuerpo = cuerpo;

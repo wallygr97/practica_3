@@ -6,7 +6,7 @@ public class Comentario {
     private Usuario autor;
     private Articulo articulo;
 
-    public Comentario(long id, String comentario, Usuario autor, Articulo articulo) {
+    public Comentario() {
         this.id = id;
         this.comentario = comentario;
         this.autor = autor;
