@@ -4,9 +4,12 @@ public class Etiqueta {
     private long id;
     private String etiqueta;
 
-    public Etiqueta() {
-        this.id = id;
+    public Etiqueta(String etiqueta) {
         this.etiqueta = etiqueta;
+    }
+
+    public Etiqueta() {
+
     }
 
     public long getId() {
@@ -23,5 +26,9 @@ public class Etiqueta {
 
     public void setEtiqueta(String etiqueta) {
         this.etiqueta = etiqueta;
+    }
+
+    public String tagsTransform() {
+        return etiqueta.substring(0,1).toUpperCase() + etiqueta.substring(1).toLowerCase();
     }
 }

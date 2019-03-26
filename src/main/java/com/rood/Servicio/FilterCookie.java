@@ -2,7 +2,8 @@ package com.rood.Servicio;
 
 import com.rood.clases.Usuario;
 
-import static spark.Spark.*;
+import static spark.Spark.*;//importacion estatica.. nos da acceso a todos los metodos post, get,
+// Dentro del constructor, el método get () se usa para registrar una Ruta que escucha las solicitudes GET en / usuarios.
 
 public class FilterCookie {
     public void aplicarFiltros(){
@@ -64,5 +65,13 @@ public class FilterCookie {
             }
         });
 
+
+        after("/", (request, response) -> {
+            // ... check if authenticated
+            Usuario logUser = request.session(true).attribute("usuario");
+            if (logUser == null || (!logUser.isAdministrador() && !logUser.isAutor())) {
+                response.redirect("/iniciarSesion");
+            }
+        });
     }
 }

@@ -12,6 +12,38 @@ public class Articulo {
     private List<Comentario> listaComentarios;
     private List<Etiqueta> listaEtiquetas;
 
+    public Articulo( String titulo, String cuerpo, Usuario autor, Date fecha, List<Comentario> listaComentarios, List<Etiqueta> listaEtiquetas) {
+        this.titulo = titulo;
+        this.cuerpo = cuerpo;
+        this.autor = autor;
+        this.fecha = fecha;
+        this.listaComentarios = listaComentarios;
+        this.listaEtiquetas = listaEtiquetas;
+    }
+
+
+
+    public Articulo() {
+
+    }
+
+    public String textoResumido(){
+        if(cuerpo.length() > 70){
+            return cuerpo.substring(0, 70)+"...";
+        }
+        else
+            return cuerpo;
+    }
+
+    public String etiquetasString(){
+        String etiquetasString = "";
+        for (int i=0; i < listaEtiquetas.size() - 1;i++ ){
+            etiquetasString += listaEtiquetas.get(i).getEtiqueta() + ",";
+        }
+        etiquetasString += listaEtiquetas.get(listaEtiquetas.size() - 1).getEtiqueta();
+        return etiquetasString;
+    }
+
     public long getId() {
         return id;
     }
@@ -68,13 +100,5 @@ public class Articulo {
         this.listaEtiquetas = listaEtiquetas;
     }
 
-    public Articulo() {
-        this.id = id;
-        this.titulo = titulo;
-        this.cuerpo = cuerpo;
-        this.autor = autor;
-        this.fecha = fecha;
-        this.listaComentarios = listaComentarios;
-        this.listaEtiquetas = listaEtiquetas;
-    }
+
 }

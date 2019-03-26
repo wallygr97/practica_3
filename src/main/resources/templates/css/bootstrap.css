@@ -51,7 +51,7 @@ html {
 }
 
 @-ms-viewport {
-  width: device-width;
+
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -1822,11 +1822,7 @@ pre code {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .form-control {
-    transition: none;
-  }
-}
+
 
 .form-control::-ms-expand {
   background-color: transparent;
@@ -2329,11 +2325,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .btn {
-    transition: none;
-  }
-}
+
 
 .btn:hover, .btn:focus {
   text-decoration: none;
@@ -2960,12 +2952,6 @@ input[type="button"].btn-block {
 
 .fade {
   transition: opacity 0.15s linear;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .fade {
-    transition: none;
-  }
 }
 
 .fade:not(.show) {
@@ -5040,11 +5026,7 @@ input[type="button"].btn-block {
   transition: width 0.6s ease;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .progress-bar {
-    transition: none;
-  }
-}
+
 
 .progress-bar-striped {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5336,11 +5318,7 @@ button.close {
   transform: translate(0, -25%);
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .modal.fade .modal-dialog {
-    transition: none;
-  }
-}
+
 
 .modal.show .modal-dialog {
   -webkit-transform: translate(0, 0);
@@ -5786,11 +5764,6 @@ button.close {
   perspective: 1000px;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .carousel-item {
-    transition: none;
-  }
-}
 
 .carousel-item.active,
 .carousel-item-next,
@@ -6547,7 +6520,7 @@ button.bg-dark:focus {
 }
 
 .justify-content-around {
-  -ms-flex-pack: distribute !important;
+
   justify-content: space-around !important;
 }
 
@@ -6702,7 +6675,7 @@ button.bg-dark:focus {
     justify-content: space-between !important;
   }
   .justify-content-sm-around {
-    -ms-flex-pack: distribute !important;
+
     justify-content: space-around !important;
   }
   .align-items-sm-start {
@@ -6841,7 +6814,7 @@ button.bg-dark:focus {
     justify-content: space-between !important;
   }
   .justify-content-md-around {
-    -ms-flex-pack: distribute !important;
+
     justify-content: space-around !important;
   }
   .align-items-md-start {
@@ -6980,7 +6953,7 @@ button.bg-dark:focus {
     justify-content: space-between !important;
   }
   .justify-content-lg-around {
-    -ms-flex-pack: distribute !important;
+
     justify-content: space-around !important;
   }
   .align-items-lg-start {
@@ -7119,7 +7092,7 @@ button.bg-dark:focus {
     justify-content: space-between !important;
   }
   .justify-content-xl-around {
-    -ms-flex-pack: distribute !important;
+
     justify-content: space-around !important;
   }
   .align-items-xl-start {

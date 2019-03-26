@@ -1,30 +1,21 @@
 package com.rood.clases;
 
 public class Usuario {
-    private int id;
     private String username;
     private String nombre;
     private String password;
-    private boolean admin;
-    private boolean autor;
     private boolean administrador;
+    private boolean autor;
 
     public Usuario() {
-        this.id = id;
+    }
+
+    public Usuario(String username, String nombre, String password, boolean administrador, boolean autor) {
         this.username = username;
         this.nombre = nombre;
         this.password = password;
-        this.admin = admin;
-        this.autor = autor;
         this.administrador = administrador;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+        this.autor = autor;
     }
 
     public String getUsername() {
@@ -51,12 +42,8 @@ public class Usuario {
         this.password = password;
     }
 
-    public boolean isAdmin() {
-        return admin;
-    }
-
-    public void setAdmin(boolean admin) {
-        this.admin = admin;
+    public boolean isAdministrador() {
+        return administrador;
     }
 
     public void setAdministrador(boolean administrador) {
@@ -69,10 +56,5 @@ public class Usuario {
 
     public void setAutor(boolean autor) {
         this.autor = autor;
-    }
-
-    public boolean isAdministrador() {
-
-        return administrador;
     }
 }

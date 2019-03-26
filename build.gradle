@@ -18,6 +18,6 @@ dependencies {
     compile 'com.sparkjava:spark-core:2.7.2'
     compile 'com.sparkjava:spark-template-freemarker:2.5.5'
     compile 'org.sql2o:sql2o:1.5.4'
-    compile 'com.h2database:h2:1.4.194'
-    compile 'org.jasypt:jasypt:1.9.2'
+    compile 'com.h2database:h2:1.4.197'
+    compile 'org.jasypt:jasypt:1.9.2' 
 }

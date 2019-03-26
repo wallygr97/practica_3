@@ -321,6 +321,8 @@ public class UserServices {
     }
 
     public boolean crearEtiqueta(Etiqueta o){
+        System.out.println(o.getEtiqueta());
+
         boolean ok =false;
         if(buscarUsuario(o.getEtiqueta()) != null)
             return false;
